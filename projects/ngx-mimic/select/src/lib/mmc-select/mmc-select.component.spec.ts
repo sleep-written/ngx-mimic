@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MmcSelect } from './select.component';
+import { MmcSelectComponent } from './mmc-select.component';
 
-describe('SelectComponent', () => {
-  let component: MmcSelect;
-  let fixture: ComponentFixture<MmcSelect>;
+describe('MmcSelectComponent', () => {
+  let component: MmcSelectComponent<any>;
+  let fixture: ComponentFixture<MmcSelectComponent<any>>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MmcSelect ]
+      declarations: [ MmcSelectComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MmcSelect);
+    fixture = TestBed.createComponent(MmcSelectComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

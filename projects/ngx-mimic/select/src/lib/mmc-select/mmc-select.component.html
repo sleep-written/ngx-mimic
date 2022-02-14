@@ -1,0 +1,15 @@
+<mat-form-field>
+    <input matInput
+    type="text"
+    [formControl]="this.control"
+    [matAutocomplete]="auto"
+    (blur)="this.onBlur()" />
+
+    <mat-autocomplete #auto="matAutocomplete"
+    [displayWith]="this.displayFn">
+        <mat-option *ngFor="let item of this.options | async"
+        [value]="item">
+            {{ item.text }}
+        </mat-option>
+    </mat-autocomplete>
+</mat-form-field>

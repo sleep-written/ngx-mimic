@@ -2,6 +2,5 @@
  * Public API Surface of select
  */
 
-export * from './lib/select.service';
-export * from './lib/select.component';
-export * from './lib/select.module';
+export { MmcSelect } from './lib/select.component';
+export { SelectModule } from './lib/select.module';

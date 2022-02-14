@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { SelectModule } from '@ngx-mimic/select';
+import { MatOptionModule } from '@angular/material/core';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +15,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+    SelectModule,
+    MatOptionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
