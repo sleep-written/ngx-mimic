@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@ngx-mimic/select": [
+        "dist/ngx-mimic/select/ngx-mimic-select",
+        "dist/ngx-mimic/select"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
